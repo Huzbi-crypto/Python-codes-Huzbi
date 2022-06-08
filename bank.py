@@ -9,7 +9,7 @@ for _ in range(16):
         print("0$")
 
     # Check to see if the greeting starts with 'h' but isn't 'hello' and give 20$    
-    elif greetings in ("hey", "how's it going", "how are ya", "how are you", "how do you do", "hi"):
+    elif greetings.startswith("h"):
         print ("20$")
 
     # If the greeting is something else or blank then give 100$    

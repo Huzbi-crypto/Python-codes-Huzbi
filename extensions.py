@@ -8,7 +8,7 @@ for _ in range(16):
     # Output the result according to it
     if filename.endswith(".gif"):
         print("image/gif")
-    elif filename.endswith(".jpg") or filename.endswith(".jpeg"):
+    elif filename.endswith(("jpg", "jpeg")):
         print("image/jpeg")
     elif filename.endswith(".png"):
         print("image/png")

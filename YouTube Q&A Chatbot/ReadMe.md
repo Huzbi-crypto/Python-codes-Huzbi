@@ -4,13 +4,17 @@ This is a very interesting, tricky, confusing, and difficult project which I hav
 
 ## Instructions
 
+At the start of the program, you will be asked to enter a YouTube URL so that it can download its audio file and transcribe it to get the text from the video with the help of OpenAi's Whisper. After transcribing, you will have the chance to ask a question regarding that video's content.\
+NOTE: Be careful when using a video as it can only transcribe audio files that don't exceed the 25 MB limit as per Whisper's requirements.
+
 To get started, you need to have these libraries and modules downloaded and installed:
 - openai.
 - faiss-cpu.
 - moviepy.
 - pytube3.
 - langchain.
-- tiktoken.
+- tiktoken.\
+
 You can install them all through pip:
 ```
 pip install openai faiss-cpu moviepy pytube3 langchain tiktoken

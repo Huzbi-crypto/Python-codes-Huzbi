@@ -1,7 +1,7 @@
 # This is a basic code which will convert a format of an image file into another format.
 # Author: Huzbi
-# Date: 30/06/2023
-
+# Date Created: 30/06/2023
+# Latest Update: 30/06/2023
 from PIL import Image
 
 def webp_to_img(input_path):

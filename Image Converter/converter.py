@@ -4,15 +4,26 @@
 
 from PIL import Image
 
-def webp_to_png(input_path, output_path):
-    try:
-        im = Image.open(input_path).convert("RGB")
-        im.save(output_path, "png")
-        print("Conversion successful!")
-    except IOError:
-        print("Cannot convert the image.")
+def webp_to_img(input_path):
+    print("To PNG or JPEG? Enter in small caps.")
+    ft_type = input()
+    if (ft_type == "png"):
+        try:
+            im = Image.open(input_path).convert("RGB")
+            output_path = "file.png"
+            im.save(output_path, "png")
+            print("Conversion successful!")
+        except IOError:
+            print("Cannot convert the image.")
+    elif (ft_type == "jpeg" or ft_type == "jpg"):
+        try:
+            im = Image.open(input_path).convert("RGB")
+            output_path = "file.jpeg"
+            im.save(output_path, "jpeg")
+            print("Conversion successful!")
+        except IOError:
+            print("Cannot convert the image.")
 
 input_path = "file.webp"
-output_path = "file.png"
 
-webp_to_png(input_path, output_path)
+webp_to_img(input_path)

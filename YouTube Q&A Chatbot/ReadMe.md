@@ -1,3 +1,5 @@
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=32F79C&center=true&vCenter=true&width=435&lines=A+Q%26A+YouTube+Chatbot)](https://git.io/typing-svg)
+
 # Introduction
 
 This is a very interesting, tricky, confusing, and difficult project which I have decided to work on. A YouTube video Q&A chatbot is a bot that gives answers to the questions asked regarding a video over at YouTube. Look at the "Instructions" section to understand how it works.

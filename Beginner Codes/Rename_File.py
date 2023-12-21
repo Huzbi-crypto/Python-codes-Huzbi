@@ -1,13 +1,23 @@
-def rename(query):
+import os
+
+# Rename a file
+def rename(query, filename):
+    os.rename(filename, query)
     return query
-
-def main():
-    file = 'File.txt'
-    print(f'Currently the file name is {file}')
-    rename_file = input('Enter the new file name: ')
-    file = rename(rename_file+'.txt')
-    print(f'Now the file name is {file}')
-
+  
 if __name__ == '__main__':
-    main()
+    # Create a file
+    filename = 'file.txt'
+    file = open(filename, 'x')
+    file.close()
+
+    print(f'Currently the file name is {filename}')
+    # Rename the file
+    rename_file = input('Enter the new file name: ')
+    filename = rename(rename_file+'.txt', filename)
+    
+    print(f'Now the file name is {file}')
+    
     input('Enter a key to exit...')
+    # Delete the file
+    os.remove(filename)

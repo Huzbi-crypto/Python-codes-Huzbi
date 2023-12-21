@@ -16,7 +16,7 @@ if __name__ == '__main__':
     rename_file = input('Enter the new file name: ')
     filename = rename(rename_file+'.txt', filename)
     
-    print(f'Now the file name is {file}')
+    print(f'Now the file name is {filename}')
     
     input('Enter a key to exit...')
     # Delete the file
